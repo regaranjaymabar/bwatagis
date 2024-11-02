@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GABISA NEBAK = G SYG AK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e91e63;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        .result {
+            display: none;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>GABISA NEBAK = G SYG AK</h1>
+
+<div class="quiz-container">
+    <div class="quiz">
+        <div class="question" id="question">hari kamis aku masuk jam berapa?</div>
+        <button onclick="checkAnswer('A')">A. 08 : 00</button>
+        <button onclick="checkAnswer('B')">B. 08 : 50</button>
+        <button onclick="checkAnswer('C')">C. 09 : 00</button>
+        <button onclick="checkAnswer('D')">D. 09 : 30</button>
+    </div>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    function checkAnswer(answer) {
+        const correctAnswer = 'B'; // Ganti ini dengan jawaban yang benar
+        const resultDiv = document.getElementById('result');
+        
+        if (answer === correctAnswer) {
+            resultDiv.textContent = "YEYYYYYYY Benerr Berarti Kamu Sayang Aku, ILOVE UUUUUUU SAYAAAAANG";
+        } else {
+            resultDiv.textContent = "LAH G SYG AK YA???????!!!!!!!!!!!";
+        }
+        
+        resultDiv.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
